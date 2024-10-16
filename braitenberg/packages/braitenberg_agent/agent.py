@@ -22,11 +22,12 @@ from solution.connections import get_motor_left_matrix, get_motor_right_matrix
 from solution.preprocessing import preprocess
 
 
-# TODO edit this Config class ! Play with different gain and const values
+
 @dataclass
 class BraitenbergAgentConfig:
-    gain: float = 0.9
-    const: float = 0.0
+    #best Output with this config, in some simulations 0.3/0.7 works better
+    gain: float = 0.2
+    const: float = 0.8
 
 
 class BraitenbergAgent:
